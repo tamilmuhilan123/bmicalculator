@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inspiration&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.bmimain{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 800px;
+    /* height: 380px; */
+    padding: 10px;
+    border-radius: 5px;
+}
+.main-1{
+    flex-basis: 40%;
+}
+.main-2{
+    flex-basis: 42%;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+.heading{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.error{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: red;
+}
+.textbox{
+    margin-bottom: 10px;
+}
+.textbox p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.textbox input{
+    padding: 10px;
+    width: 100%;
+}
+.buttons{
+    margin-bottom: 15px;
+}
+.cal{
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(71, 182, 241);
+    border: 2px solid rgb(71, 182, 241);
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.cal:hover{
+    background-color: rgb(46, 172, 246);
+}
+.clr{
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    background-color: rgb(248, 60, 60);
+    border: 2px solid rgb(248, 60, 60);
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.clr:hover{
+    background-color: red;
+}
+.result p{
+    margin-bottom: 5px;
+}
+.result{
+    border: 2px solid rgb(71, 182, 241);
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width:795px) {
+    .main{
+        display: block;
+    }
+    .main-1 {
+        border: 2px solid black;
+        width: 100%;
+    }
+    .main-1 img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:343px) {
+    .error{
+        font-size: 12px;
+    }
+    .main-1{
+        height: 200px;
+    }
+    .main-1 img{
+        height: 100%;
+    }
+
+}
